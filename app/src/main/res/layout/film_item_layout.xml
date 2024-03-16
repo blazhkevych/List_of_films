@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- The root element of the layout file.
+It's a LinearLayout, which provides a way to arrange its children in a single column or a single row. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- A TextView that will display the title of the film. -->
     <TextView
         android:id="@+id/filmTitle_textView"
         android:layout_width="match_parent"
@@ -13,11 +16,13 @@
         android:textColor="#0F5119"
         android:textSize="12sp" />
 
+    <!-- A LinearLayout that will contain the genre and year of the film. -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <!-- A TextView that will display the genre of the film. -->
         <TextView
             android:id="@+id/filmGenre_textView"
             android:layout_width="wrap_content"
@@ -27,6 +32,7 @@
             android:textColor="#0F5119"
             android:textSize="8sp" />
 
+        <!-- A TextView that will display the year of the film. -->
         <TextView
             android:id="@+id/filmYear_textView"
             android:layout_width="match_parent"
