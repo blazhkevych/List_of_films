@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The root element of the AndroidManifest.xml file.
-It must contain an <application> element and specify xmlns:android and xmlns:tools attributes. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- The application element represents the application and contains all its components. -->
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,13 +12,17 @@ It must contain an <application> element and specify xmlns:android and xmlns:too
         android:supportsRtl="true"
         android:theme="@style/Theme.List_of_films"
         tools:targetApi="31">
-        <!-- The activity element represents an activity that must be defined in the AndroidManifest.xml file. -->
+
+        <activity
+            android:name=".AddFilmActivity"
+            android:exported="false" />
         <activity
             android:name=".FilmsActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <!-- The intent-filter element specifies the types of intents that an activity, service, or broadcast receiver can respond to. -->
             <intent-filter>
                 <!-- The action element specifies an action that can be performed on an item. -->

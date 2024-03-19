@@ -21,4 +21,22 @@ It's a ConstraintLayout, which allows you to create large and complex layouts wi
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+
+    <!-- Add Film button -->
+    <Button
+        android:id="@+id/btnAddFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Film"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFilms"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
